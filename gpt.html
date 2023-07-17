@@ -15,20 +15,58 @@
         <a href="gpt.html">GPT</a>
         <a href="mapofjapansvg.html">Japan Map</a>
     </div>
-</body>
     
-<head>
-    <title>GPT Prompt</title>
-</head>
-<body>
-    <h1>GPT Prompt</h1>
-    <form id="prompt-form">
-        <input type="text" id="prompt-input" placeholder="Type something..." required/>
-        <input type="submit" value="Submit"/>
-    </form>
-    <h2>Response</h2>
-    <div id="response-container"></div>
+  <head>
+    <title>GPT API Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        // API endpoint URL
+        const apiUrl = 'https://api.openai.com/v1/engines/davinci-codex/completions';
 
-    <script src="script.js"></script>
-</body>
+        // Your OpenAI API key
+        const apiKey = 'YOUR_API_KEY';
+
+        // Handle form submission
+        $('#inputForm').submit(function(event) {
+          event.preventDefault();
+          
+          // Get the input text from the form
+          const inputText = $('#inputText').val();
+          
+          // Make the API request
+          $.ajax({
+            type: 'POST',
+            url: apiUrl,
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': 'Bearer ' + apiKey
+            },
+            data: JSON.stringify({
+              'prompt': inputText,
+              'max_tokens': 100, // adjust as needed
+              'temperature': 0.7 // adjust as needed
+            }),
+            success: function(response) {
+              // Display the API response
+              $('#outputText').text(response.choices[0].text);
+            },
+            error: function(xhr, status, error) {
+              console.error(xhr.responseText);
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>GPT API Example</h1>
+    <form id="inputForm">
+      <label for="inputText">Input Text:</label><br>
+      <textarea id="inputText" rows="4" cols="50"></textarea><br>
+      <button type="submit">Submit</button>
+    </form>
+    <h2>Output:</h2>
+    <div id="outputText"></div>
+  </body>
 </html>
