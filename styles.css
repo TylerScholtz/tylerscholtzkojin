@@ -60,3 +60,21 @@ body {
         display: block;
     }
 }
+
+.intro {
+    font-size: 1.2em;
+    color: #333;
+    padding: 1em;
+    line-height: 1.6;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.intro a {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 2px solid #333;
+}
+
+.intro a:hover {
+    color: #666;
+}
