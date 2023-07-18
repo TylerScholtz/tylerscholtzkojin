@@ -78,3 +78,7 @@ body {
 .intro a:hover {
     color: #666;
 }
+.linkedin-button img {
+    width: 50px;    /* adjust as needed */
+    height: 50px;   /* adjust as needed */
+}
