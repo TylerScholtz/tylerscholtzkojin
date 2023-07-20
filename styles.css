@@ -1,0 +1,139 @@
+
+/* Reset some default styles */
+body, h1, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Styling the header */
+.header {
+    background-color: #8b0000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Styling the navbar */
+.navbar {
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #b22222;
+}
+
+/* Hamburger menu for smaller screens */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+
+@media (max-width: 600px) {
+    /* Hide the navbar and show the hamburger menu on smaller screens */
+    .navbar {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+.intro {
+    font-size: 1.2em;
+    color: #333;
+    padding: 1em;
+    line-height: 1.6;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.intro a {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 2px solid #333;
+}
+
+.intro a:hover {
+    color: #666;
+}
+.linkedin-button img {
+    width: 50px;    /* adjust as needed */
+    height: 50px;   /* adjust as needed */
+}
+
+/* Style for global header below */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Adding a hover effect to the navbar links */
+.navbar a:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Animating the dropdown */
+.dropdown-content {
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropdown-content {
+    transform: scaleY(1);
+}
+
+/* Adding some space for the icons */
+.navbar a {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a i {
+    margin-right: 5px;
+}
