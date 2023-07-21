@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Personal Website</title>
+</head>
+<body>
+<div id="header"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(function(){
+  $("#header").load("global/header.html"); 
+});
+</script>
+
+<div class="intro">
+    <div class="intro">
+        <p>Welcome to my personal website! </p>
+        <p>This is a platform where I document my journey in coding, specifically with projects like GPT chatbots and my travel blogs from Japan. </p>
+        <p>Feel free to explore and learn more about my journey. </p>
+        <p>This website is hosted on gitlab pages. You can also check out the Github repository (https://bit.ly/3XW6TVA) for this website.</p>
+        <p>タイラーの個人ウェブサイトへようこそ！ 自由に探索して、私の旅についてもっと学んでください。 </p>
+        <p>ここは、GPTチャットボットや日本の旅行ブログなどの様々な個人プロジェクトに関連したコーディングの旅を文書化するウェブサイトです。 </p>
+        <p>GitHub Pagesでホストしており、Githubリポジトリ (https://bit.ly/3XW6TVA)からソースコードも見ることができます。</p>
+    </div>
+</div>
+<button class="hamburger" id="hamburger">&#9776;</button>
+<script src="/typed/typed.umd.js"></script>
+<script>
+    var typed = new Typed('.intro', {
+      stringsElement: '.intro',
+      typeSpeed: 50,
+      backSpeed: 0,
+      smartBackspace: false,
+      startDelay: 3,
+    });
+</script>
+
+<div class="change-log">
+    <div class="change-log">
+    <h2>Change Log</h2>
+    <ul>
+        <li><strong>2023/07/21:</strong>:
+                         > Added function that the page loads fully before being displayed
+                         >added loading ticker animation when loading page. Tried (and failed) to add mobile functionality to global header. typed.js integration (https://mattboldt.com/demos/typed-js/) for home page</li>
+        <li><strong>2023/07/20:</strong>:
+                         > created global header and directory</li>
+        <li><strong>2023/07/19:</strong>:
+                         > created basic header and subpages</li>
+        <li><strong>2023/07/18:</strong>:
+                         > Domain DNS transferred to Github DNS
+                         >Coding of website begins
+                         >basic homepage up and running</li>
+        <li><strong>2023/07/16:</strong>:
+                         > tylerscholtz.jp Domain purchased</li>
+    </ul>
+</div>
+</div>
+
+<div class="future-plans">
+    <div class="future-plans">
+    <h2>Future Plans</h2>
+    <ul>
+        <li>AI dev Automating Code project (https://github.com/andreyvit/aidev/blob/main/README.md)</li>
+    </ul>
+</div>
+</div>
+</body>
+</html>
