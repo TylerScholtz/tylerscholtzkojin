@@ -59,6 +59,9 @@ $(document).ready(function() {
   $("#Aomori").hover(function() { $("#prefecture-name").text("Aomori"); }, function() { $("#prefecture-name").text("Hover over a prefecture to see its name."); });
   $("#Niigata").hover(function() { $("#prefecture-name").text("Niigata"); }, function() { $("#prefecture-name").text("Hover over a prefecture to see its name."); });
   $("#Hokkaido").hover(function() { $("#prefecture-name").text("Hokkaido"); }, function() { $("#prefecture-name").text("Hover over a prefecture to see its name."); });
+  $("#OUTLINE").hover(function() { $("#prefecture-name").text("OUTLINE"); }, function() { $("#prefecture-name").text("Hover over a prefecture to see its name."); });
+  $("#layer3").hover(function() { $("#prefecture-name").text("layer3"); }, function() { $("#prefecture-name").text("Hover over a prefecture to see its name."); });
+  $("#layer2").hover(function() { $("#prefecture-name").text("layer2"); }, function() { $("#prefecture-name").text("Hover over a prefecture to see its name."); });
 });
 </script><script>
 var selectedPrefecture = null;
@@ -995,13 +998,14 @@ $("#Hokkaido").hover(function() {
   }
 });
 
-  
-
 });
-</script><div style="display: flex;"><div style="flex: 1; padding: 15px;"><div style="margin: 15px; padding-bottom: 15px; border-bottom: 1px solid #ccc;"><h1> Interactive SVG Map of Japan</h1><p>This project entailed creating an interactive map of Japan, offering both visual enhancement and informative features. An SVG map from Wikipedia's library was used as the base, which was then imported into Adobe Illustrator for further editing. This allowed for the grouping of Japan's individual prefectures into separate layers.</p><p>
+</script></html>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.7.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<div style="margin: 15px; padding-bottom: 15px; border-bottom: 1px solid #ccc;"><h1> Title: Interactive SVG Map of Japan</h1><p>This project entailed creating an interactive map of Japan, offering both visual enhancement and informative features. An SVG map from Wikipedia's library was used as the base, which was then imported into Adobe Illustrator for further editing. This allowed for the grouping of Japan's individual prefectures into separate layers.</p><p>
 </p><p>The modified SVG was subsequently embedded into an HTML page, with the added functionality that changes the color of each prefecture when hovered over with a mouse. This interaction enhances user engagement and provides a clear indication of which prefecture is currently selected.</p><p>
 </p><p>The next stage in the project's development involves adding an additional feature that, when a prefecture is clicked, a popup will be displayed containing interesting facts about that particular region. This will further improve the map's interactivity while also providing an educational element to users.</p><p>
-</p></div></div><div style="flex: 1; padding: 15px; text-align: center;"><div id="prefecture-name" style="text-align: center; margin: 10px;">Hover over a prefecture to see its name.</div><div style="width: 100%; margin: auto;"><svg style="width: 100%; height: auto;" version="1.1" viewbox="0 0 1397 1593" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"><style>#Tokushima:hover path { fill: red; }
+</p></div><div id="prefecture-name" style="text-align: center; margin: 10px;">Hover over a prefecture to see its name.</div><svg style="width: 100%; height: auto;" version="1.1" viewbox="0 0 1397 1593" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"><style>#Tokushima:hover path { fill: red; }
 #Kagawa:hover path { fill: red; }
 #Yamaguchi:hover path { fill: red; }
 #Oita:hover path { fill: red; }
@@ -2077,7 +2081,7 @@ $("#Hokkaido").hover(function() {
 <path class="st0" d="M930.7,148.6c-0.2-0.7-0.6-3.3-0.7-5.8c-0.3-4.2-0.1-4.5,2.4-4.8c3.3-0.4,4.3,2.1,3.3,7.9
 		c-0.5,3-1.1,4-2.6,4C932.1,149.9,931,149.3,930.7,148.6L930.7,148.6z" id="Hokkaido9"></path>
 </g>
-<g id="Nothing" inkscape:output_extension="org.inkscape.output.svg.inkscape" inkscape:version="0.47 r22583" sodipodi:docname="22222.svg" sodipodi:version="0.32" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg">
+<g id="OUTLINE" inkscape:output_extension="org.inkscape.output.svg.inkscape" inkscape:version="0.47 r22583" sodipodi:docname="22222.svg" sodipodi:version="0.32" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg">
 <defs>
 <inkscape:perspective id="perspective2464" inkscape:persp3d-origin="372.04724 : 350.78739 : 1" inkscape:vp_x="0 : 526.18109 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="744.09448 : 526.18109 : 1" sodipodi:type="inkscape:persp3d">
 </inkscape:perspective>
@@ -2363,18 +2367,4 @@ $("#Hokkaido").hover(function() {
 		c1.9,0.8-0.9,0.1-0.9,1.7c0,3,3.7,7.5,6,8.4c1.8,0.7,3.4,2.6,5.3,2.6c2.6,0,3.3,2.5,3.3,4.6c0,4-0.4,1.7-1.7,5
 		c-0.4,1.1,0.6,7.7,0.6,6" id="path2636" sodipodi:nodetypes="csssssssssssc"></path>
 </g>
-
-</svg></div><div id="selected-prefecture" style="text-align: center; margin: 10px;">Nothing is currently selected.</div></div></div><script>
-	var selectedPrefecture = null;
-	
-	$("g[id]").click(function() {
-	  if (selectedPrefecture) {
-		$(selectedPrefecture).css("fill", "");
-	  }
-	  
-	
-	  
-	  var selected_prefecture_name = $(this).attr('id');
-	  $("#selected-prefecture").text(selected_prefecture_name + " is currently selected.");
-	});
-	</script></html>
+</svg>
