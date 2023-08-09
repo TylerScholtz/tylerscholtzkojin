@@ -1,6 +1,6 @@
 
 var navbar = document.getElementById('navbar');
-var hamburger = document.getElementById('hamburger');
+var hamburger = document.getElementById('hamburger-icon');
 
 hamburger.addEventListener('click', function() {
     navbar.style.display = navbar.style.display === 'none' ? 'flex' : 'none';
