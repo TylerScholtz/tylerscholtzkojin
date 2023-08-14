@@ -10,19 +10,31 @@
     </div>
     <button class="hamburger" id="hamburger-icon">&#9776;</button><button class="hamburger" id="hamburger-icon">&#9776;</button><div class="navbar" id="navbar">
         <a href="/index.html"><i class="fas fa-home"></i> ホーム・Home</a>
+        <div class="dropdown">
+            <a href="/construction.html"><i class="fas fa-map-marked-alt"></i> サイト情報・About This Site</a>
+            <div class="dropdown-content">
+                <a href="/about/architecture.html">Architectural Diagram</a>
+                <a href="/construction.html">List of APIs</a>
+            </div>
+        </div>
         <a href="/cv/cv.html"><i class="fas fa-id-card"></i> 履歴書・CV</a>
         <div class="dropdown">
-            <a href="/travel/travel.html" class="dropbtn"><i class="fas fa-plane-departure"></i> 日本国内旅行・Japan Travel Guide</a>
+            <a href="/japanmap/mapofjapansvg.html" class="dropbtn"><i class="fas fa-plane-departure"></i> 日本旅行案内・Japan Map Project</a>
             <div class="dropdown-content">
-                <a href="/placehoder">Prefecture Guides</a>
-                <a href="/placehoder">City Guides</a>
-                <a href="/placehoder">Tokyo Neighbourhood Guides</a>
+                <a href="/construction.html">Prefecture Guides</a>
+                <a href="/construction.html">City Guides</a>
+                <a href="/construction.html">Tokyo Neighbourhood Guides</a>
                 <a href="/japanmap/mapofjapansvg.html">Journey Around Japan</a>
             </div>
         </div>
-        <a href="/japanmap/mapofjapansvg.html"><i class="fas fa-map-marked-alt"></i> 日本地図・Japan Interactive Map</a>
-        <a href="/coding/python.html"><i class="fas fa-laptop-code"></i> 100日間のパイソン・100 Days of Python</a>
-        <a href="/gpt/gpt.html"><i class="fas fa-robot"></i> ジェネレーティブAI・GPT API Testing</a>
+        <a href="/coding/python.html"><i class="fas fa-laptop-code"></i> コーディング勉強・Coding Journey</a>
+        <div class="dropdown">
+            <a href="/gpt/gpt.html"><i class="fas fa-robot"></i> API & GPT</a>
+            <div class="dropdown-content">
+                <a href="/construction.html">Pokemon Card Search</a>
+                <a href="/construction.html">Japan Trip Generator</a>
+            </div>
+        </div>
     </div>
 <script>
     document.getElementById("hamburger-icon").addEventListener("click", function() {
