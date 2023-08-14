@@ -123,6 +123,7 @@ $(function(){
 #map-container {
     flex: 1;
     margin-right: 20px;
+    margin-left: 20px;
 }
 
 #text-box {
@@ -137,6 +138,7 @@ $(function(){
     .search-bar {
         position: relative;
         display: inline-block;
+        padding: 20px;
     }
     .search-bar input[type="text"] {
         width: 300px; /* Twice as long */
@@ -163,9 +165,14 @@ $(function(){
     }
 </style>
 
+
+   
+  
+  
+
 <div>
 <div class="search-bar">
-    <input type="text" id="prefectureSearch" onkeyup="filterPrefectures()" placeholder="Search for prefectures...">
+    <input type="text" id="prefectureSearch" onkeyup="filterPrefectures()" placeholder="SEARCH BAR DOESNT WORK :(">
     <div id="prefectureDropdown" class="dropdown-content">
         <a href="#">Aichi</a>
         <a href="#">Akita</a>
@@ -259,27 +266,6 @@ $(function(){
 	 viewBox="0 0 1031.3 1183" style="enable-background:new 0 0 1031.3 1183;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#231F20;stroke-width:16;}
-	.st1{fill:#32CD32;stroke:#808080;stroke-width:0.5;stroke-linejoin:round;}
-
-.st1-selected { fill: #2f4f4f; }
-
-#content-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#map-container {
-    flex: 1;
-    margin-right: 20px;
-}
-
-#text-box {
-    flex: 1;
-    padding: 20px;
-    border-right: 1px solid #333;
-}
-
 </style>
 <path id="Island_Divider" class="st0" d="M519.3,0c0,282.8-260.5,512-519.3,512"/>
 <g id="Prefectures">
@@ -1237,3 +1223,8 @@ var selectedColor = "#2f4f4f";
 });
 
 </script>
+
+<div style="flex: 1; padding: 15px;"><div style="margin: 15px; padding-bottom: 15px; border-bottom: 1px solid #ccc;"><h1> Interactive SVG Map of Japan</h1><p>This project entailed creating an interactive map of Japan, offering both visual enhancement and informative features. An SVG map from Wikipedia's library was used as the base, which was then imported into Adobe Illustrator for further editing. This allowed for the grouping of Japan's individual prefectures into separate layers.</p><p>
+</p><p>The modified SVG was subsequently embedded into an HTML page, with the added functionality that changes the color of each prefecture when hovered over with a mouse. This interaction enhances user engagement and provides a clear indication of which prefecture is currently selected.</p><p>
+</p><p>The next stage in the project's development involves adding an additional feature that, when a prefecture is clicked, a popup will be displayed containing interesting facts about that particular region. This will further improve the map's interactivity while also providing an educational element to users.</p><p>
+</p></div>
