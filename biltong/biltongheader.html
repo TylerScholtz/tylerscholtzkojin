@@ -1,34 +1,49 @@
 <head>
-    <title>タイラーの個人WEBサイト</title>
-    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <title>BILTONG JAPAN</title>
+    <link rel="stylesheet" type="text/css" href="/biltong/biltongstyles.css">
     <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
     <div class="header">
-        <h1>タイラーの個人WEBサイト</h1>
+        <h1>ビルトング日本・BILTONG JAPAN</h1>
     </div>
-    <button class="hamburger" id="hamburger-icon">&#9776;</button><button class="hamburger" id="hamburger-icon">&#9776;</button><div class="navbar" id="navbar">
+    
+    <button class="hamburger" id="hamburger-icon">&#9776;</button>
+    <div class="navbar" id="navbar">
         <a href="/index.html"><i class="fas fa-home"></i> ホーム・Home</a>
+        
         <div class="dropdown">
-            <a href="/construction.html"><i class="fas fa-map-marked-alt"></i> サイト情報・About This Site ▾</a>
+            <a href="index.html" class="dropbtn"><i class="fas fa-plane-departure"></i> ビルトングとは・What is Biltong ▾</a>
             <div class="dropdown-content">
-                <a href="/about/architecture.html">Architectural Diagram</a>
-                <a href="/construction.html">List of APIs</a>
+                <a href="/japanmap/mapofjapansvg.html">ビルトングの歴史・History</a>
+                <a href="/biltong/biltongindex.html">作り方・How its Made</a>
             </div>
         </div>
-        <a href="/cv/cv.html"><i class="fas fa-id-card"></i> 履歴書・CV</a>
+
         <div class="dropdown">
-            <a href="index.html" class="dropbtn"><i class="fas fa-plane-departure"></i> 個人プロジェクト・Personal Projects ▾</a>
+            <a href="/cv/cv.html"><i class="fas fa-id-card"></i> 店舗情報・Physical Store ▾</a>
             <div class="dropdown-content">
-                <a href="/japanmap/mapofjapansvg.html">日本旅行案内・Japan Map PJ</a>
-                <a href="/biltong/biltongindex.html">ビルトング・Biltong</a>
-                <a href="/construction.html">ポケカード検索・Pokemon Card</a>
-                <a href="/gpt/gpt.html">GPT API</a>
+                <a href="/biltong/biltongindex.html">アクセス・Location</a>
+                <a href="/biltong/biltongindex.html">連絡先・Contact Info</a>
             </div>
         </div>
-        <a href="/coding/python.html"><i class="fas fa-laptop-code"></i> コーディング勉強・Coding Journey</a>
+
+        <div class="dropdown">
+            <a href="/biltong/biltongindex.html"><i class="fas fa-map-marked-alt"></i> オンラインストア・Online Store ▾</a>
+            <div class="dropdown-content">
+                <a href="/biltong/biltongindex.html">セール・Specials</a>
+                <a href="/biltong/biltongindex.html">商品一覧・All Products</a>
+            </div>
+        </div>              
+        
+        <div class="dropdown">
+            <a href="/coding/python.html"><i class="fas fa-laptop-code"></i> 栄養情報・Nutritional Info</a>
+        </div>
     </div>
+</body>
+
 <script>
     document.getElementById("hamburger-icon").addEventListener("click", function() {
         var x = document.getElementById("navbar");
