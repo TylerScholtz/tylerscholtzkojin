@@ -1,7 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fff;
-    color: #333;
+    background-color: #c33d3d;
+    color: #ffffff;
     line-height: 1.6;
     padding: 20px;
     margin: 0;
@@ -15,13 +15,24 @@ body {
 
 .main-title {
     font-size: 2.5em;
-    color: #d33; /* Red color for Christmas */
+    color: rgb(102, 229, 113); /* Red color for Christmas */
 }
 
 .talisman-info h2, .more-info h3 {
     font-size: 1.5em;
-    color: #06c; /* Blue color for a Japanese feel */
+    color: rgb(177, 204, 0); /* Blue color for a Japanese feel */
     margin-bottom: 10px;
+}
+
+a {
+    color: white; /* Changes the link color to white */
+    text-decoration: none; /* Optional: removes the underline from links */
+}
+
+a:hover,
+a:active,
+a:visited {
+    color: white; /* Keeps the link white even after it's clicked or hovered */
 }
 
 img {
